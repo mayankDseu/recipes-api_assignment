@@ -10,7 +10,7 @@ class RecipeTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->baseUrl = 'http://host.docker.internal:8080';
+        $this->baseUrl = 'http://localhost:8080';
         $this->authToken = 'secret-token-123'; 
 
         $this->client = new Client([
